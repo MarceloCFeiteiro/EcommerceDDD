@@ -1,0 +1,14 @@
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\InfraStructure.deps.json
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\InfraStructure.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\InfraStructure.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\bin\Debug\netcoreapp3.1\Entities.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.csprojAssemblyReference.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.AssemblyInfoInputs.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.AssemblyInfo.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.csproj.CoreCompileInputs.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.csproj.CopyComplete
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\InfraStructure\obj\Debug\netcoreapp3.1\InfraStructure.pdb
