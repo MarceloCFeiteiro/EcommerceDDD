@@ -25,13 +25,14 @@ ObjetoVenda.AdicionarCarrinho = function (idProduto) {
     });
 }
 
-ObjetoVenda.CarregaProdutos = function () {
+ObjetoVenda.CarregaProdutos = function (descricao) {
     $.ajax({
         type: 'GET',
         url: "/api/ListarProdutosComEstoque",
         dataType: "JSON",
         cache: false,
         async: true,
+        data: { descricao: descricao },
         success: function (data) {
             var htmlConteudo = "";
 
@@ -82,4 +83,10 @@ ObjetoVenda.CarregarQtdCarrinho = function () {
 $(function () {
     ObjetoVenda.CarregaProdutos();
     ObjetoVenda.CarregarQtdCarrinho();
+
+    $("#buscar").click(
+        function () {
+            var descricao = $("#descricao").val();
+            ObjetoVenda.CarregaProdutos(descricao);
+        });
 });

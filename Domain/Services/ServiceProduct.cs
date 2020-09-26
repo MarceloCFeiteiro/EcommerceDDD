@@ -29,9 +29,15 @@ namespace Domain.Services
             }
         }
 
-        public async Task<List<Produto>> ListarProdutosComEstoque()
+        public async Task<List<Produto>> ListarProdutosComEstoque(string descricao)
         {
-            return await _product.ListarProdutos(p => p.QtdEstoque > 0);
+            if (string.IsNullOrWhiteSpace(descricao))
+                return await _product.ListarProdutos(p => p.QtdEstoque > 0);
+            else
+            {
+                return await _product.ListarProdutos(p => p.QtdEstoque > 0 &&
+                                                          p.Nome.ToUpper().Contains(descricao.ToUpper()));
+            }
         }
 
         public async Task UpdateProduct(Produto produto)

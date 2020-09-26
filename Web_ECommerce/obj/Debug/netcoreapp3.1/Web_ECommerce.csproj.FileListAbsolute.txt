@@ -50,6 +50,11 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -60,6 +65,10 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\PdfSharpCore.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\QRCoder.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -68,6 +77,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Sy
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
@@ -123,6 +133,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ru
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\de\PdfSharpCore.resources.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
@@ -142,6 +153,9 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\En
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.csprojAssemblyReference.cache
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.AssemblyInfoInputs.cache
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.AssemblyInfo.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.csproj.CoreCompileInputs.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.RazorAssemblyInfo.cache
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.RazorAssemblyInfo.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.TagHelpers.input.cache
@@ -213,11 +227,3 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\st
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.genruntimeconfig.cache
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\QRCoder.dll
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\PdfSharpCore.dll
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\de\PdfSharpCore.resources.dll
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.csproj.CoreCompileInputs.cache
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.MvcApplicationPartsAssemblyInfo.cache
