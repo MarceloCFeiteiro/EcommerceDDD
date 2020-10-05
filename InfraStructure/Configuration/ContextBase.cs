@@ -34,7 +34,7 @@ namespace InfraStructure.Configuration
 
         private string GetStringConnectionConfigure()
         {
-            string strConn = "Data Source =.\\SQLEXPRESS; Initial Catalog = DDD_ECOMMERCE; Integrated Security = True";
+            string strConn = "Server=tcp:servidorestudonetcore.database.windows.net,1433;Initial Catalog=devestudonetcore;Persist Security Info=False;User ID=Marcelo_Feiteiro;Password=Aioli@1002;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
             return strConn;
         }

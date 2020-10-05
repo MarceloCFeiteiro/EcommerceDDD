@@ -49,7 +49,7 @@ namespace Web_ECommerce.Controllers
         // GET: ProdutosController/Create
         public async Task<IActionResult> Create()
         {
-            return View();
+            return  View();
         }
 
         // POST: ProdutosController/Create
