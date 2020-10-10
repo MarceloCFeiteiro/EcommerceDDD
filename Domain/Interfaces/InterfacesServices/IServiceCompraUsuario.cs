@@ -1,4 +1,5 @@
 ﻿using Entities.Entities;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Domain.Interfaces.InterfacesServices
@@ -7,6 +8,8 @@ namespace Domain.Interfaces.InterfacesServices
     {
         public Task<CompraUsuario> CarrinhoCompras(string userId);
 
-        public Task<CompraUsuario> ProdutosComprados(string userId);
+        public Task<List<CompraUsuario>> MinhasCompras(string userId);
+
+        public Task<CompraUsuario> ProdutosComprados(string userId, int? idCompra = null);
     }
 }

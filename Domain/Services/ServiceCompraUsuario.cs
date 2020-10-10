@@ -2,6 +2,7 @@
 using Domain.Interfaces.InterfacesServices;
 using Entities.Entities;
 using Entities.Entities.Enums;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Domain.Services
@@ -20,9 +21,14 @@ namespace Domain.Services
             return await _compraUsuario.ProdutosCompradosPorEstado(userId, EnumEstadoCompra.Produto_Carrinho);
         }
 
-        public async Task<CompraUsuario> ProdutosComprados(string userId)
+        public async Task<List<CompraUsuario>> MinhasCompras(string userId)
         {
-            return await _compraUsuario.ProdutosCompradosPorEstado(userId, EnumEstadoCompra.Produto_Comprado);
+            return await _compraUsuario.MinhasComprasPorEstado(userId, EnumEstadoCompra.Produto_Carrinho);
+        }
+
+        public async Task<CompraUsuario> ProdutosComprados(string userId, int? idCompra = null)
+        {
+            return await _compraUsuario.ProdutosCompradosPorEstado(userId, EnumEstadoCompra.Produto_Comprado, idCompra);
         }
     }
 }

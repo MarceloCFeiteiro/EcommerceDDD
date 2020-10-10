@@ -39,7 +39,7 @@ namespace Entities.Entities
         [Display(Name = "Usuario")]
         [ForeignKey("ApplicationUser")]
         [Column(Order = 1)]
-        public string UserId { get; set; } //--> Porque o campo userid ficou como string
+        public string UserId { get; set; } 
 
         public virtual ApplicationUser ApplicationUser { get; set; }
 
@@ -53,7 +53,13 @@ namespace Entities.Entities
 
         [Column("PRD_DATA_CADASTRO")]
         [Display(Name = "Data de Cadastro")]
-        public DateTime DataCadastro { get; set; }
+        public DateTime DataCadastro { get; set; }        
+
+        [Column("PRD_URL")]
+        public string Url { get; set; }
+
+        [NotMapped]
+        public DateTime? DataCompra { get; set; }
 
         [NotMapped]
         public int IdProdutoCarrinho { get; set; }
@@ -63,8 +69,5 @@ namespace Entities.Entities
 
         [NotMapped]
         public IFormFile Imagem { get; set; }
-
-        [Column("PRD_URL")]
-        public string Url { get; set; }
     }
 }

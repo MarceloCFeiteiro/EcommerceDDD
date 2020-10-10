@@ -33,12 +33,12 @@ namespace Web_ECommerce.Controllers
         public async Task<IActionResult> MinhasCompras(bool mensagem = false)
         {
             var usuario = await _userManager.GetUserAsync(User);
-            var compraUsuario = await _interfaceCompraUsuarioApp.ProdutosComprados(usuario.Id);
+            var compraUsuario = await _interfaceCompraUsuarioApp.MinhasCompras(usuario.Id);
 
             if (mensagem)
             {
                 ViewBag.Sucesso = true;
-                ViewBag.Mensagem = "Compra efetvada com sucesso. Pague o boleto para garantir sua compra!";
+                ViewBag.Mensagem = "Compra efetivada com sucesso. Pague o boleto para garantir sua compra!";
             }
 
             return View(compraUsuario);
@@ -57,10 +57,10 @@ namespace Web_ECommerce.Controllers
                 return RedirectToAction("FinalizarCompra");
         }
 
-        public async Task<IActionResult> Imprimir()
+        public async Task<IActionResult> Imprimir(int idCompra)//mudei de id para id compra
         {
             var usuario = await _userManager.GetUserAsync(User);
-            var compraUsuario = await _interfaceCompraUsuarioApp.ProdutosComprados(usuario.Id);
+            var compraUsuario = await _interfaceCompraUsuarioApp.ProdutosComprados(usuario.Id, idCompra);
             return await Download(compraUsuario, _environment);
         }
 

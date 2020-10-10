@@ -1,5 +1,6 @@
 ﻿using Entities.Entities;
 using Entities.Entities.Enums;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Domain.Interfaces.Generics.InterfaceCompraUsuario
@@ -8,7 +9,9 @@ namespace Domain.Interfaces.Generics.InterfaceCompraUsuario
     {
         public Task<int> QuantidadeProdutoCarrinhoUsuario(string userId);
 
-        public Task<CompraUsuario> ProdutosCompradosPorEstado(string userId, EnumEstadoCompra estado);
+        public Task<CompraUsuario> ProdutosCompradosPorEstado(string userId, EnumEstadoCompra estado, int? idCompra = null);
+
+        public Task<List<CompraUsuario>> MinhasComprasPorEstado(string userId, EnumEstadoCompra estado);
 
         public Task<bool> ConfirmaCompraCarrinhoUsuario(string userId);
     }

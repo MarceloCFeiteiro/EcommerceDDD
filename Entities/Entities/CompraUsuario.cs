@@ -1,5 +1,6 @@
 ﻿using Entities.Entities.Enums;
 using Entities.Notifiations;
+using Microsoft.EntityFrameworkCore.Query.SqlExpressions;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -49,5 +50,12 @@ namespace Entities.Entities
 
         [NotMapped]
         public List<Produto> ListaProdutos { get; set; }
+
+        [Display(Name = "Compra")]
+        [ForeignKey("TB_COMPRA")]
+        [Column(Order = 1)]
+        public int IdCompra { get; set; }
+
+        public virtual Compra Compra { get; set; }
     }
 }

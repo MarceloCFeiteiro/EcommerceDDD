@@ -12,6 +12,8 @@ namespace InfraStructure.Configuration
 
         public DbSet<ApplicationUser> Usuarios { get; set; }
 
+        public DbSet<Compra> Compras { get; set; }
+
         public ContextBase(DbContextOptions<ContextBase> options) : base(options)
         {
         }

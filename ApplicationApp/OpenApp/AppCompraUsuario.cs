@@ -48,9 +48,14 @@ namespace ApplicationApp.OpenApp
             return await _compraUsuario.List();
         }
 
-        public async Task<CompraUsuario> ProdutosComprados(string userId)
+        public async Task<List<CompraUsuario>> MinhasCompras(string userId)
         {
-            return await _serviceCompraUsuario.ProdutosComprados(userId);
+            return await _serviceCompraUsuario.MinhasCompras(userId);
+        }
+
+        public async Task<CompraUsuario> ProdutosComprados(string userId, int? idCompra = null)
+        {
+            return await _serviceCompraUsuario.ProdutosComprados(userId, idCompra);
         }
 
         public async Task<int> QuantidadeProdutoCarrinhoUsuario(string userId)
