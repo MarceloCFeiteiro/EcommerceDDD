@@ -1,5 +1,4 @@
-﻿
-JSONViewer = (function () {
+﻿JSONViewer = (function () {
     var JSONViewer = function () {
         this._dom = {};
         this._dom.container = document.createElement("pre");

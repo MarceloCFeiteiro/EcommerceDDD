@@ -23,14 +23,12 @@ namespace InfraStructure.Repository.Generics
             using var data = new ContextBase(_optionBuilder);
             await data.Set<T>().AddAsync(obj);
 
-
             try
             {
                 await data.SaveChangesAsync();
             }
-            catch (Exception ex )
+            catch (Exception ex)
             {
-
                 throw;
             }
         }

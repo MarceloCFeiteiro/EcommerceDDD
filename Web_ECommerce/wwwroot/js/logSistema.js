@@ -6,7 +6,6 @@ function ConfiguraJson() {
     var json = $("#JsonInformacao").val();
 
     if (json != undefined && json != null && json != "") {
-
         objetojson = JSON.parse(json);
 
         jsonView.showJSON(objetojson);

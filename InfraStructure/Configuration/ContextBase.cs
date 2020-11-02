@@ -16,7 +16,9 @@ namespace InfraStructure.Configuration
 
         public DbSet<LogSistema> LogsSistema { get; set; }
 
-        public ContextBase(DbContextOptions<ContextBase> options) : base(options) { }
+        public ContextBase(DbContextOptions<ContextBase> options) : base(options)
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

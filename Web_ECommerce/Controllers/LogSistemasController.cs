@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using ApplicationApp.Interfaces;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
-using Entities.Entities;
-using InfraStructure.Configuration;
-using ApplicationApp.Interfaces;
+using System.Threading.Tasks;
 
 namespace Web_ECommerce.Controllers
 {

@@ -69,7 +69,6 @@ namespace Web_ECommerce.Controllers
         {
             var usuario = await _userManager.GetUserAsync(User);
 
-
             if (usuario != null)
             {
                 await _interfaceCompraUsuarioApp.AdicionaProdutoCarrinho(usuario.Id, new CompraUsuario

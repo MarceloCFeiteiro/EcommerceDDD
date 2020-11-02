@@ -35,7 +35,7 @@ namespace InfraStructure.Repository.Repositories
             {
                 var produtoCarrinhoUsuario = await (from p in banco.Produtos
                                                     join c in banco.CompraUsuarios on p.Id equals c.IdProduto
-                                                    join co in banco.Compras on c.IdCompra equals co.Id 
+                                                    join co in banco.Compras on c.IdCompra equals co.Id
                                                     where c.UserId.Equals(userId) && c.Estado == EnumEstadoCompra.Produto_Carrinho
                                                     select new Produto
                                                     {

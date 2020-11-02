@@ -27,7 +27,7 @@ namespace Web_ECommerce.Controllers
             _interfaceLogSistemaApp = interfaceLogSistemaApp;
         }
 
-        public  async Task<string> RetornarIdUsuarioLogado()
+        public async Task<string> RetornarIdUsuarioLogado()
         {
             var idUsuario = await _userManager.GetUserAsync(User);
             return idUsuario.Id;
@@ -45,7 +45,7 @@ namespace Web_ECommerce.Controllers
                 UserId = await RetornarIdUsuarioLogado(),
                 NomeAction = actionName,
                 NomeController = controllerName,
-            }) ; 
+            });
         }
     }
 }

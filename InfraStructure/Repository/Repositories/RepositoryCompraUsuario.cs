@@ -7,7 +7,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
 namespace InfraStructure.Repository.Repositories
@@ -42,7 +41,7 @@ namespace InfraStructure.Repository.Repositories
                     });
 
                     var compra = await banco.Compras.AsNoTracking().FirstOrDefaultAsync(c => c.Id == compraUsuario.IdCompra);
-                    if(compra != null)
+                    if (compra != null)
                     {
                         compra.Estado = EnumEstadoCompra.Produto_Comprado;
                     }

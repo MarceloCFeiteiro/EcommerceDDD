@@ -19,7 +19,6 @@ namespace Web_ECommerce.Controllers
     [LogActionFilter]
     public class ProdutosController : BaseController
     {
-
         public readonly IInterfaceProductApp _interfaceProduct;
 
         public readonly IInterfaceCompraUsuarioApp _interfaceCompraUsuarioApp;
@@ -37,8 +36,6 @@ namespace Web_ECommerce.Controllers
             _interfaceCompraUsuarioApp = interfaceCompraUsuarioApp;
             _environment = environment;
         }
-
-
 
         // GET: ProdutosController
         public async Task<IActionResult> Index()
@@ -117,7 +114,7 @@ namespace Web_ECommerce.Controllers
                     }
 
                     ViewBag.Alerta = true;
-                    ViewBag.Mensagem = "Verifique, não foi possível alterar o produto!";                   
+                    ViewBag.Mensagem = "Verifique, não foi possível alterar o produto!";
 
                     return View("Edit", produto);
                 }
@@ -188,7 +185,7 @@ namespace Web_ECommerce.Controllers
                 await _interfaceCompraUsuarioApp.Delete(produtoDeletar);
                 return RedirectToAction(nameof(ListarProdutosCarrinhoUsurario));
             }
-            catch(Exception erro)
+            catch (Exception erro)
             {
                 await LogEcommerce(EnumTipoLog.Erro, erro);
                 return View();
@@ -226,6 +223,5 @@ namespace Web_ECommerce.Controllers
                 await LogEcommerce(EnumTipoLog.Erro, erro);
             }
         }
-
     }
 }

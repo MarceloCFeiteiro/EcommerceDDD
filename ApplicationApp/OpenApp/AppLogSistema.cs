@@ -1,8 +1,6 @@
 ﻿using ApplicationApp.Interfaces;
 using Domain.Interfaces.InterfaceLogSistema;
 using Entities.Entities;
-using Microsoft.VisualBasic;
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -34,7 +32,7 @@ namespace ApplicationApp.OpenApp
 
         public async Task<List<LogSistema>> List()
         {
-           return await _logSistema.List();
+            return await _logSistema.List();
         }
 
         public async Task Update(LogSistema logSistema)

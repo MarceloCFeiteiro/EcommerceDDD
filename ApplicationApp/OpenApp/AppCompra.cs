@@ -1,10 +1,7 @@
 ﻿using ApplicationApp.Interfaces;
 using Domain.Interfaces.InterfaceCompra;
 using Entities.Entities;
-using Microsoft.VisualBasic;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ApplicationApp.OpenApp
