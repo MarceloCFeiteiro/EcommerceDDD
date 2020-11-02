@@ -4,7 +4,6 @@
 // Write your JavaScript code.
 
 var ObjetoAlerta = new Object();
-
 ObjetoAlerta.AlertaTela = function (tipo, mensagem) {
     $("#AlertaJavaScript").html("");
 

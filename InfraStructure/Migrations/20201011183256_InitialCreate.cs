@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace InfraStructure.Migrations
 {
-    public partial class UpdateBase : Migration
+    public partial class InitialCreate : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -163,6 +163,27 @@ namespace InfraStructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TB_COMPRA",
+                columns: table => new
+                {
+                    COM_ID = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    COM_ESTADO = table.Column<int>(nullable: false),
+                    COM_DATA_COMPRA = table.Column<DateTime>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TB_COMPRA", x => x.COM_ID);
+                    table.ForeignKey(
+                        name: "FK_TB_COMPRA_AspNetUsers_UserId",
+                        column: x => x.UserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "TB_PRODUTO",
                 columns: table => new
                 {
@@ -197,17 +218,23 @@ namespace InfraStructure.Migrations
                     CUS_ID = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     IdProduto = table.Column<int>(nullable: false),
-                    ProdutoId = table.Column<int>(nullable: true),
                     CUS_ESTADO = table.Column<int>(nullable: false),
                     CUS_QTD = table.Column<int>(nullable: false),
-                    UserId = table.Column<string>(nullable: true)
+                    UserId = table.Column<string>(nullable: true),
+                    IdCompra = table.Column<int>(nullable: false),
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_TB_COMPRA_USUARIO", x => x.CUS_ID);
                     table.ForeignKey(
-                        name: "FK_TB_COMPRA_USUARIO_TB_PRODUTO_ProdutoId",
-                        column: x => x.ProdutoId,
+                        name: "FK_TB_COMPRA_USUARIO_TB_COMPRA_IdCompra",
+                        column: x => x.IdCompra,
+                        principalTable: "TB_COMPRA",
+                        principalColumn: "COM_ID",
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_TB_COMPRA_USUARIO_TB_PRODUTO_IdProduto",
+                        column: x => x.IdProduto,
                         principalTable: "TB_PRODUTO",
                         principalColumn: "PRD_ID",
                         onDelete: ReferentialAction.Restrict);
@@ -259,9 +286,19 @@ namespace InfraStructure.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_TB_COMPRA_USUARIO_ProdutoId",
+                name: "IX_TB_COMPRA_UserId",
+                table: "TB_COMPRA",
+                column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TB_COMPRA_USUARIO_IdCompra",
                 table: "TB_COMPRA_USUARIO",
-                column: "ProdutoId");
+                column: "IdCompra");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_TB_COMPRA_USUARIO_IdProduto",
+                table: "TB_COMPRA_USUARIO",
+                column: "IdProduto");
 
             migrationBuilder.CreateIndex(
                 name: "IX_TB_COMPRA_USUARIO_UserId",
@@ -296,6 +333,9 @@ namespace InfraStructure.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "TB_COMPRA");
 
             migrationBuilder.DropTable(
                 name: "TB_PRODUTO");

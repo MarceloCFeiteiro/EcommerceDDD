@@ -47,6 +47,7 @@ namespace InfraStructure.Repository.Repositories
                         compra.Estado = EnumEstadoCompra.Produto_Comprado;
                     }
 
+                    banco.Update(compra);
                     banco.UpdateRange(produtosCarrinhoUsuario);
                     await banco.SaveChangesAsync();
 
@@ -88,6 +89,7 @@ namespace InfraStructure.Repository.Repositories
                                                              Url = p.Url,
                                                              DataCompra = item.DataCompra
                                                          }).AsNoTracking().ToListAsync();
+
                     compraUsuario.ListaProdutos = produtosCarrinhoUsuario;
                     compraUsuario.ApplicationUser = await banco.Usuarios.FirstOrDefaultAsync(u => u.Id.Equals(userId));
                     compraUsuario.QuantidadeProdutos = produtosCarrinhoUsuario.Count();
@@ -122,6 +124,7 @@ namespace InfraStructure.Repository.Repositories
                                                          Id = p.Id,
                                                          Nome = p.Nome,
                                                          Descricao = p.Descricao,
+                                                         Observacao = p.Observacao,
                                                          Valor = p.Valor,
                                                          QtdCompra = c.QtdCompra,
                                                          IdProdutoCarrinho = c.Id,

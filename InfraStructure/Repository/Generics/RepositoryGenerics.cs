@@ -22,7 +22,17 @@ namespace InfraStructure.Repository.Generics
         {
             using var data = new ContextBase(_optionBuilder);
             await data.Set<T>().AddAsync(obj);
-            await data.SaveChangesAsync();
+
+
+            try
+            {
+                await data.SaveChangesAsync();
+            }
+            catch (Exception ex )
+            {
+
+                throw;
+            }
         }
 
         public async Task Delete(T obj)

@@ -5,6 +5,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Migrations\20201012145637_InitialCreate.cs" />
+    <Compile Include="Migrations\20201012145637_InitialCreate.Designer.cs" />
+    <Compile Include="Migrations\20201102181516_UpdateBaseAula19.cs" />
+    <Compile Include="Migrations\20201102181516_UpdateBaseAula19.Designer.cs" />
+    <Compile Include="Migrations\ContextBaseModelSnapshot.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />

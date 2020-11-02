@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationApp.OpenApp
 {
-    public class AppProduct : IInterfaceProduct
+    public class AppProduct : IInterfaceProductApp
     {
         public readonly IProduct _product;
         public readonly IServiceProduct _serviceProduct;

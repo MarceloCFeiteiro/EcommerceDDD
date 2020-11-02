@@ -23,6 +23,11 @@ namespace ApplicationApp.OpenApp
             await _compraUsuario.Add(obj);
         }
 
+        public async Task AdicionaProdutoCarrinho(string userId, CompraUsuario compraUsuario)
+        {
+            await _serviceCompraUsuario.AdicionarProdutoCarrinho(userId, compraUsuario);
+        }
+
         public async Task<CompraUsuario> CarrinhoCompras(string userId)
         {
             return await _serviceCompraUsuario.CarrinhoCompras(userId);

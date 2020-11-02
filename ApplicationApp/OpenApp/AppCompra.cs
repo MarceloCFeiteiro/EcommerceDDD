@@ -13,6 +13,11 @@ namespace ApplicationApp.OpenApp
     {
         private readonly ICompra _compra;
 
+        public AppCompra(ICompra ICompra)
+        {
+            _compra = ICompra;
+        }
+
         public async Task Add(Compra compra)
         {
             await _compra.Add(compra);

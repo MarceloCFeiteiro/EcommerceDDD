@@ -29,7 +29,7 @@ namespace Entities.Entities
         [Display(Name = "Quantidade")]
         public int QtdCompra { get; set; }
 
-        [Display(Name = "Usuario")]
+        [Display(Name = "Usuário")]
         [ForeignKey("ApplicationUser")]
         [Column(Order = 1)]
         public string UserId { get; set; }

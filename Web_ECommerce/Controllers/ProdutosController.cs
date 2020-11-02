@@ -1,10 +1,12 @@
 ﻿using ApplicationApp.Interfaces;
 using Entities.Entities;
+using Entities.Entities.Enums;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Internal;
+using Microsoft.Extensions.Logging;
 using System;
 using System.IO;
 using System.Security;
@@ -14,23 +16,29 @@ using System.Threading.Tasks;
 namespace Web_ECommerce.Controllers
 {
     [Authorize]
-    public class ProdutosController : Controller
+    [LogActionFilter]
+    public class ProdutosController : BaseController
     {
-        public readonly UserManager<ApplicationUser> _userManager;
 
-        public readonly IInterfaceProduct _interfaceProduct;
+        public readonly IInterfaceProductApp _interfaceProduct;
 
         public readonly IInterfaceCompraUsuarioApp _interfaceCompraUsuarioApp;
 
-        private IWebHostEnvironment _environment;
+        private readonly IWebHostEnvironment _environment;
 
-        public ProdutosController(IInterfaceProduct interfaceProduct, IInterfaceCompraUsuarioApp interfaceCompraUsuarioApp, UserManager<ApplicationUser> userManager, IWebHostEnvironment environment)
+        public ProdutosController(IInterfaceProductApp interfaceProduct,
+                                  IInterfaceCompraUsuarioApp interfaceCompraUsuarioApp,
+                                  IInterfaceLogSistemaApp interfaceLogSistemaApp,
+                                  ILogger<BaseController> logger,
+                                  UserManager<ApplicationUser> userManager,
+                                  IWebHostEnvironment environment) : base(logger, userManager, interfaceLogSistemaApp)
         {
             _interfaceProduct = interfaceProduct;
             _interfaceCompraUsuarioApp = interfaceCompraUsuarioApp;
-            _userManager = userManager;
             _environment = environment;
         }
+
+
 
         // GET: ProdutosController
         public async Task<IActionResult> Index()
@@ -49,7 +57,7 @@ namespace Web_ECommerce.Controllers
         // GET: ProdutosController/Create
         public async Task<IActionResult> Create()
         {
-            return  View();
+            return View();
         }
 
         // POST: ProdutosController/Create
@@ -76,9 +84,11 @@ namespace Web_ECommerce.Controllers
                 }
 
                 await SalvarImagemDoProduto(produto);
+                await LogEcommerce(EnumTipoLog.Informativo, produto);
             }
-            catch
+            catch (Exception erro)
             {
+                await LogEcommerce(EnumTipoLog.Erro, erro);
                 return View("Create", produto);
             }
             return RedirectToAction(nameof(Index));
@@ -107,15 +117,18 @@ namespace Web_ECommerce.Controllers
                     }
 
                     ViewBag.Alerta = true;
-                    ViewBag.Mensagem = "Verifique, não foi possível alterar o produto!";
+                    ViewBag.Mensagem = "Verifique, não foi possível alterar o produto!";                   
 
                     return View("Edit", produto);
                 }
             }
-            catch
+            catch (Exception erro)
             {
+                await LogEcommerce(EnumTipoLog.Erro, erro);
                 return View("Edit", produto);
             }
+
+            await LogEcommerce(EnumTipoLog.Informativo, produto);
             return RedirectToAction(nameof(Index));
         }
 
@@ -134,10 +147,12 @@ namespace Web_ECommerce.Controllers
             {
                 var produtoDeletar = await _interfaceProduct.GetEntityById(id);
                 await _interfaceProduct.Delete(produtoDeletar);
+                await LogEcommerce(EnumTipoLog.Informativo, produtoDeletar);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (Exception erro)
             {
+                await LogEcommerce(EnumTipoLog.Erro, erro);
                 return View();
             }
         }
@@ -173,8 +188,9 @@ namespace Web_ECommerce.Controllers
                 await _interfaceCompraUsuarioApp.Delete(produtoDeletar);
                 return RedirectToAction(nameof(ListarProdutosCarrinhoUsurario));
             }
-            catch
+            catch(Exception erro)
             {
+                await LogEcommerce(EnumTipoLog.Erro, erro);
                 return View();
             }
         }
@@ -207,13 +223,9 @@ namespace Web_ECommerce.Controllers
             }
             catch (Exception erro)
             {
+                await LogEcommerce(EnumTipoLog.Erro, erro);
             }
         }
 
-        private async Task<string> RetornarIdUsuarioLogado()
-        {
-            var idUsuario = await _userManager.GetUserAsync(User);
-            return idUsuario.Id;
-        }
     }
 }

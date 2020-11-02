@@ -3,6 +3,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ap
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.local.json
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\DevEcommerceMarcelo - Web Deploy\profile.arm.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.StaticWebAssets.xml
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.exe
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.deps.json
@@ -29,10 +30,13 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Razor.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.Workspaces.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
@@ -41,6 +45,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Mi
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
@@ -69,6 +74,10 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Pd
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\QRCoder.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
@@ -81,6 +90,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Sy
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
@@ -139,6 +149,18 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ru
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
@@ -204,6 +226,8 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Ra
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\CompraUsuario\MinhasCompras.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\LogSistemas\Details.cshtml.g.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\LogSistemas\Index.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Create.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Delete.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Details.cshtml.g.cs

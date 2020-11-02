@@ -7,7 +7,10 @@
 <h1>Lista de Produtos do Carrinho</h1>
 
 <br />
-<a class="nav-link text-dark" asp-area="" asp-controller="CompraUsuario" asp-action="FinalizarCompra">Comprar do carrinho</a>
+@if (Model.Count() != 0)
+{
+    <a class="nav-link text-dark" asp-area="" asp-controller="CompraUsuario" asp-action="FinalizarCompra">Comprar do carrinho</a> 
+}
 
 <table class="table">
     <thead>

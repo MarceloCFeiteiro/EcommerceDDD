@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace ApplicationApp.Interfaces
 {
-    public interface IInterfaceProduct : IInterfaceGenericApp<Produto>
+    public interface IInterfaceProductApp : IInterfaceGenericApp<Produto>
     {
         Task AddProduct(Produto produto);
 
