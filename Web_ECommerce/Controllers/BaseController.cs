@@ -18,9 +18,7 @@ namespace Web_ECommerce.Controllers
 
         public readonly IInterfaceLogSistemaApp _interfaceLogSistemaApp;
 
-        public BaseController(ILogger<BaseController> logger,
-                              UserManager<ApplicationUser> userManager,
-                              IInterfaceLogSistemaApp interfaceLogSistemaApp)
+        public BaseController(ILogger<BaseController> logger, UserManager<ApplicationUser> userManager, IInterfaceLogSistemaApp interfaceLogSistemaApp)
         {
             _logger = logger;
             _userManager = userManager;
