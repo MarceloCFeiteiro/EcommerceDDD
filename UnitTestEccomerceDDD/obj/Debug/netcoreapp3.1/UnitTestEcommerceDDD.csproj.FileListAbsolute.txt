@@ -1,5 +1,5 @@
-C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\testhost.exe
+C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\testhost.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\UnitTestEccomerceDDD\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll

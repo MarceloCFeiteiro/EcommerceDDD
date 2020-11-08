@@ -13,6 +13,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\We
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.Views.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.Views.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
