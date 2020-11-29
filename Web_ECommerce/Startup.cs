@@ -5,23 +5,20 @@ using Domain.Interfaces.Generics.InterfaceCompraUsuario;
 using Domain.Interfaces.InterfaceCompra;
 using Domain.Interfaces.InterfaceLogSistema;
 using Domain.Interfaces.InterfaceProducts;
+using Domain.Interfaces.InterfaceServices;
 using Domain.Interfaces.InterfacesServices;
+using Domain.Interfaces.InterfaceUsuario;
 using Domain.Services;
 using Entities.Entities;
 using InfraStructure.Configuration;
 using InfraStructure.Repository.Generics;
 using InfraStructure.Repository.Repositories;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.IdentityModel.Tokens;
-using System;
-using System.Threading.Tasks;
-using Web_ECommerce.Token;
 
 namespace Web_ECommerce
 {
@@ -52,53 +49,56 @@ namespace Web_ECommerce
             services.AddSingleton<ICompraUsuario, RepositoryCompraUsuario>();
             services.AddSingleton<ICompra, RepositoryCompra>();
             services.AddSingleton<ILogSistema, RepositoryLogSistema>();
+            services.AddSingleton<IUsuario, RepositoryUsuario>();
 
             // INTERFACE APLICAÇÃO
             services.AddSingleton<IInterfaceProductApp, AppProduct>();
             services.AddSingleton<IInterfaceCompraUsuarioApp, AppCompraUsuario>();
             services.AddSingleton<IInterfaceCompraApp, AppCompra>();
             services.AddSingleton<IInterfaceLogSistemaApp, AppLogSistema>();
+            services.AddSingleton<IInterfaceUsuarioApp, AppUsuario>();
 
             // SERVIÇO DOMINIO
             services.AddSingleton<IServiceProduct, ServiceProduct>();
             services.AddSingleton<IServiceCompraUsuario, ServiceCompraUsuario>();
+            services.AddSingleton<IServiceUsuario, ServiceUsuario>();
 
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(option =>
-                {
-                    option.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidateIssuer = true,
-                        ValidateAudience = true,
-                        ValidateLifetime = true,
-                        ValidateIssuerSigningKey = true,
+            //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            //    .AddJwtBearer(option =>
+            //    {
+            //        option.TokenValidationParameters = new TokenValidationParameters
+            //        {
+            //            ValidateIssuer = true,
+            //            ValidateAudience = true,
+            //            ValidateLifetime = true,
+            //            ValidateIssuerSigningKey = true,
 
-                        ValidIssuer = "Teste.Securiry.Bearer",
-                        ValidAudience = "Teste.Securiry.Bearer",
-                        IssuerSigningKey = JwtSecurityKey.Create("Secret_key-12345678")
-                    };
+            //            ValidIssuer = "Teste.Securiry.Bearer",
+            //            ValidAudience = "Teste.Securiry.Bearer",
+            //            IssuerSigningKey = JwtSecurityKey.Create("Secret_key-12345678")
+            //        };
 
-                    option.Events = new JwtBearerEvents
-                    {
-                        OnAuthenticationFailed = context =>
-                        {
-                            Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
-                            return Task.CompletedTask;
-                        },
+            //        option.Events = new JwtBearerEvents
+            //        {
+            //            OnAuthenticationFailed = context =>
+            //            {
+            //                Console.WriteLine("OnAuthenticationFailed: " + context.Exception.Message);
+            //                return Task.CompletedTask;
+            //            },
 
-                        OnTokenValidated = context =>
-                        {
-                            Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
-                            return Task.CompletedTask;
-                        }
-                    };
-                });
+            //            OnTokenValidated = context =>
+            //            {
+            //                Console.WriteLine("OnTokenValidated: " + context.SecurityToken);
+            //                return Task.CompletedTask;
+            //            }
+            //        };
+            //    });
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("UsuarioAPI",
-                    policy => policy.RequireClaim("UsuarioAPINumero"));
-            });
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("UsuarioAPI",
+            //        policy => policy.RequireClaim("UsuarioAPINumero"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -13,7 +13,6 @@ namespace Entities.Entities
         public string CPF { get; set; }
 
         [Column("USR_IDADE")]
-        [MaxLength(50)]
         [Display(Name = "Idade")]
         public int Idade { get; set; }
 
