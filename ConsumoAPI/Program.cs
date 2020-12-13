@@ -20,16 +20,16 @@ namespace ConsumoAPI
             Console.WriteLine("Teste API Rodando");
             Thread.Sleep(10000);
 
-            //GetProduto();
+            GetProduto();
 
-            //foreach (var produto in ListaDeProdutos)
-            //{
-            //    Console.WriteLine("Código : " + produto.Id);
+            foreach (var produto in ListaDeProdutos)
+            {
+                Console.WriteLine("Código : " + produto.Id);
 
-            //    Console.WriteLine("Nome : " + produto.Nome);
-            //}
+                Console.WriteLine("Nome : " + produto.Nome);
+            }
 
-            var mmmm = ListarProdutos();
+            //ListarProdutos();
 
             Console.ReadLine();
         }
@@ -53,12 +53,13 @@ namespace ConsumoAPI
 
                 var content = new StringContent(JsonObjeto, Encoding.UTF8, "application/json");
 
-                var resultado = cliente.PostAsync(urlApiGeraToken, content).Result;
+                var resultado = cliente.PostAsync(urlApiGeraToken, content);
 
-                if (resultado.IsSuccessStatusCode)
+                resultado.Wait();
+
+                if (resultado.Result.IsSuccessStatusCode)
                 {
-                    var tokenJson = resultado.Content.ReadAsStringAsync();
-                    tokenJson.Wait();
+                    var tokenJson = resultado.Result.Content.ReadAsStringAsync();
                     Token = JsonConvert.DeserializeObject(tokenJson.Result).ToString();
                 }
             }
