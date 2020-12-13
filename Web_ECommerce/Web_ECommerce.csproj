@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ApplicationApp\ApplicationApp.csproj" />
+    <ProjectReference Include="..\HelpConfig\HelpConfig.csproj" />
     <ProjectReference Include="..\InfraStructure\InfraStructure.csproj" />
   </ItemGroup>
 
