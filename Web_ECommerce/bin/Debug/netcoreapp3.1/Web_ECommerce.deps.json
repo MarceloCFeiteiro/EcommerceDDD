@@ -25,6 +25,7 @@
       "Web_ECommerce/1.0.0": {
         "dependencies": {
           "ApplicationApp": "1.0.0",
+          "HelpConfig": "1.0.0",
           "InfraStructure": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.8",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.8",
@@ -2677,6 +2678,20 @@
         },
         "compile": {
           "Entities.dll": {}
+        }
+      },
+      "HelpConfig/1.0.0": {
+        "dependencies": {
+          "ApplicationApp": "1.0.0",
+          "Domain": "1.0.0",
+          "InfraStructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.8"
+        },
+        "runtime": {
+          "HelpConfig.dll": {}
+        },
+        "compile": {
+          "HelpConfig.dll": {}
         }
       },
       "InfraStructure/1.0.0": {
@@ -5589,6 +5604,11 @@
       "sha512": ""
     },
     "Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HelpConfig/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

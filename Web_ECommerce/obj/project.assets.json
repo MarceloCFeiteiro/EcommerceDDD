@@ -3060,6 +3060,22 @@
           "bin/placeholder/Entities.dll": {}
         }
       },
+      "HelpConfig/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ApplicationApp": "1.0.0",
+          "Domain": "1.0.0",
+          "InfraStructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.8"
+        },
+        "compile": {
+          "bin/placeholder/HelpConfig.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HelpConfig.dll": {}
+        }
+      },
       "InfraStructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -9634,6 +9650,11 @@
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
     },
+    "HelpConfig/1.0.0": {
+      "type": "project",
+      "path": "../HelpConfig/HelpConfig.csproj",
+      "msbuildProject": "../HelpConfig/HelpConfig.csproj"
+    },
     "InfraStructure/1.0.0": {
       "type": "project",
       "path": "../InfraStructure/InfraStructure.csproj",
@@ -9643,6 +9664,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ApplicationApp >= 1.0.0",
+      "HelpConfig >= 1.0.0",
       "InfraStructure >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.8",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.8",
@@ -9691,6 +9713,9 @@
           "projectReferences": {
             "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj": {
               "projectPath": "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\ApplicationApp\\ApplicationApp.csproj"
+            },
+            "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\HelpConfig\\HelpConfig.csproj": {
+              "projectPath": "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\HelpConfig\\HelpConfig.csproj"
             },
             "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\InfraStructure\\InfraStructure.csproj": {
               "projectPath": "C:\\Users\\Eshi\\source\\repos\\EcommerceDDD\\InfraStructure\\InfraStructure.csproj"

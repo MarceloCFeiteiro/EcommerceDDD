@@ -164,8 +164,10 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ru
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ApplicationApp.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Domain.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Entities.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\HelpConfig.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\InfraStructure.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ApplicationApp.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\HelpConfig.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\InfraStructure.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Entities.pdb
