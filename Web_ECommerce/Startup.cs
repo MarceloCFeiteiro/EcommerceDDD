@@ -43,26 +43,6 @@ namespace Web_ECommerce
             services.AddControllersWithViews();
             services.AddRazorPages();
 
-            // INTERFACE E REPOSITORIO
-            services.AddSingleton(typeof(IGenerics<>), typeof(RepositoryGenerics<>));
-            services.AddSingleton<IProduct, RepositoryProduto>();
-            services.AddSingleton<ICompraUsuario, RepositoryCompraUsuario>();
-            services.AddSingleton<ICompra, RepositoryCompra>();
-            services.AddSingleton<ILogSistema, RepositoryLogSistema>();
-            services.AddSingleton<IUsuario, RepositoryUsuario>();
-
-            // INTERFACE APLICAÇÃO
-            services.AddSingleton<IInterfaceProductApp, AppProduct>();
-            services.AddSingleton<IInterfaceCompraUsuarioApp, AppCompraUsuario>();
-            services.AddSingleton<IInterfaceCompraApp, AppCompra>();
-            services.AddSingleton<IInterfaceLogSistemaApp, AppLogSistema>();
-            services.AddSingleton<IInterfaceUsuarioApp, AppUsuario>();
-
-            // SERVIÇO DOMINIO
-            services.AddSingleton<IServiceProduct, ServiceProduct>();
-            services.AddSingleton<IServiceCompraUsuario, ServiceCompraUsuario>();
-            services.AddSingleton<IServiceUsuario, ServiceUsuario>();
-
             //services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             //    .AddJwtBearer(option =>
             //    {
