@@ -80,7 +80,32 @@ ObjetoVenda.CarregarQtdCarrinho = function () {
     setTimeout(ObjetoVenda.CarregarQtdCarrinho, 10000);
 }
 
+function CarregarMenu() {
+    $.ajax({
+        type: 'GET',
+        url: "/api/ListarMenu",
+        dataType: "JSON",
+        cache: false,
+        async: true,
+
+        success: function (data) {
+            data.listaMenu.forEach(function (Entitie) {
+                var html = $("<li>", { class: "nav-item" });
+
+                if (Entitie.urlImagem != undefined && Entitie.urlImagem != "") {
+                    html.append("<a class='nav-link text-dark' href=/" + Entitie.controller + "/" + Entitie.action + ">" + Entitie.descricao + " <img src=" + Entitie.urlImagem + " width='20' height='20' /> <span id=" + Entitie.idCampo + "></span> </a>")
+                }
+                else {
+                    html.append("<a class='nav-link text-dark'  href=/" + Entitie.controller + "/" + Entitie.action + ">" + Entitie.descricao + "</a>")
+                }
+                $("#menuSite").append(html);
+            });
+        }
+    });
+}
+
 $(function () {
+    CarregarMenu();
     ObjetoVenda.CarregaProdutos();
     ObjetoVenda.CarregarQtdCarrinho();
 

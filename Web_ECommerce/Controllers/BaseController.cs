@@ -27,8 +27,29 @@ namespace Web_ECommerce.Controllers
 
         public async Task<string> RetornarIdUsuarioLogado()
         {
-            var idUsuario = await _userManager.GetUserAsync(User);
-            return idUsuario.Id;
+            if (_userManager != null)
+            {
+                var usuario = await _userManager.GetUserAsync(User);
+                return usuario != null ? usuario.Id : string.Empty;
+            }
+
+            return string.Empty;
+        }
+
+        public async Task<bool> UsuarioAdministrador()
+        {
+            if (_userManager != null)
+            {
+                var usuario = await _userManager.GetUserAsync(User);
+
+                if (usuario != null && usuario.Tipo != null)
+                {
+                    if ((TipoUsuario)usuario.Tipo == TipoUsuario.Administrador)
+                        return true;
+                }
+            }
+
+            return false;
         }
 
         public async Task LogEcommerce(EnumTipoLog enumTipoLog, Object obj)
