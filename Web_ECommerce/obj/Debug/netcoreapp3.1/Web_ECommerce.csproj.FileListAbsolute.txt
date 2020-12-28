@@ -2,6 +2,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\ap
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.StaticWebAssets.xml
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.exe
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\wwwroot\js\site.js
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.deps.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.runtimeconfig.json
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\bin\Debug\netcoreapp3.1\Web_ECommerce.runtimeconfig.dev.json
