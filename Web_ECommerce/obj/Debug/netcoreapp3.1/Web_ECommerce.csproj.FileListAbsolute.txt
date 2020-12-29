@@ -236,7 +236,6 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Ra
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Details.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Edit.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\Index.cshtml.g.cs
-C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\ListarProdutosCarrinhoUsurario.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\RemoverCarrinho.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AlertaPartial.cshtml.g.cs
@@ -254,3 +253,4 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\We
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.dll
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.pdb
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Web_ECommerce.genruntimeconfig.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\netcoreapp3.1\Razor\Views\Produtos\ListarProdutosCarrinhoUsuario.cshtml.g.cs

@@ -161,11 +161,11 @@ namespace Web_ECommerce.Controllers
             return Json(await _interfaceProduct.ListarProdutosComEstoque(descricao));
         }
 
-        public async Task<IActionResult> ListarProdutosCarrinhoUsurario()
+        public async Task<IActionResult> ListarProdutosCarrinhoUsuario()
         {
             var idUusario = await RetornarIdUsuarioLogado();
 
-            return View(await _interfaceProduct.ListarProdutosCarrinhoUsurario(idUusario));
+            return View(await _interfaceProduct.ListarProdutosCarrinhoUsuario(idUusario));
         }
 
         // GET: ProdutosController/Delete/5
@@ -183,7 +183,7 @@ namespace Web_ECommerce.Controllers
             {
                 var produtoDeletar = await _interfaceCompraUsuarioApp.GetEntityById(id);
                 await _interfaceCompraUsuarioApp.Delete(produtoDeletar);
-                return RedirectToAction(nameof(ListarProdutosCarrinhoUsurario));
+                return RedirectToAction(nameof(ListarProdutosCarrinhoUsuario));
             }
             catch (Exception erro)
             {

@@ -29,7 +29,7 @@ namespace InfraStructure.Repository.Repositories
             }
         }
 
-        public async Task<List<Produto>> ListarProdutosCarrinhoUsurario(string userId)
+        public async Task<List<Produto>> ListarProdutosCarrinhoUsuario(string userId)
         {
             using (var banco = new ContextBase(_optionBuilder))
             {
