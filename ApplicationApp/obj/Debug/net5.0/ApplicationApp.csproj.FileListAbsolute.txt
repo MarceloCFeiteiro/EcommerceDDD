@@ -1,0 +1,17 @@
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.deps.json
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ref\ApplicationApp.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\ApplicationApp.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Domain.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Entities.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Domain.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\bin\Debug\net5.0\Entities.pdb
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csprojAssemblyReference.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.AssemblyInfoInputs.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.AssemblyInfo.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csproj.CoreCompileInputs.cache
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.csproj.CopyComplete
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ref\ApplicationApp.dll
+C:\Users\Eshi\source\repos\EcommerceDDD\ApplicationApp\obj\Debug\net5.0\ApplicationApp.pdb
