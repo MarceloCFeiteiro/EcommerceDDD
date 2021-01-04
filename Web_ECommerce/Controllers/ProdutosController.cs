@@ -154,6 +154,19 @@ namespace Web_ECommerce.Controllers
             }
         }
 
+        public async Task<IActionResult> DashboardVendas()
+        {
+            return View();
+        }
+
+        [HttpGet("/api/ListarProdutosVendidos")]
+        public async Task<JsonResult> ListarProdutosVendidos(string filtro)
+        {
+            var idUsuario = await RetornarIdUsuarioLogado();
+
+            return Json(await _interfaceProduct.ListarProdutosVendidos(idUsuario, filtro));
+        }
+
         [AllowAnonymous]
         [HttpGet("/api/ListarProdutosComEstoque")]
         public async Task<JsonResult> ListarProdutosComEstoque(string descricao)

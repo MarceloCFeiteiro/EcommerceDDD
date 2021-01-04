@@ -58,6 +58,11 @@ namespace ApplicationApp.OpenApp
             return await _product.ListarProdutosUsuario(userId);
         }
 
+        public async Task<List<Produto>> ListarProdutosVendidos(string userId, string filtro)
+        {
+            return await _product.ListarProdutosVendidos(userId, filtro);
+        }
+
         public async Task<Produto> ObterProdutoCarrinho(int idProdutoCarrinho)
         {
             return await _product.ObterProdutoCarrinho(idProdutoCarrinho);
