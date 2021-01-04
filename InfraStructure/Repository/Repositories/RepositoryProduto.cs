@@ -61,6 +61,19 @@ namespace InfraStructure.Repository.Repositories
             }
         }
 
+        public async Task<List<Produto>> ListarProdutosVendidos(string userId, string filtro)
+        {
+            using (var banco = new ContextBase(_optionBuilder))
+            {
+                var produtosVendidos = await (from p in banco.Produtos
+                                              join c in banco.CompraUsuarios on p.Id equals c.IdProduto
+                                              where p.UserId.Equals(userId) && c.Estado == EnumEstadoCompra.Produto_Comprado
+                                              && (string.IsNullOrWhiteSpace(filtro) || p.Descricao.Contains(filtro))
+                                              select p).AsNoTracking().ToListAsync();
+                return produtosVendidos;
+            }
+        }
+
         public async Task<Produto> ObterProdutoCarrinho(int idProdutoCarrinho)
         {
             using (var banco = new ContextBase(_optionBuilder))
