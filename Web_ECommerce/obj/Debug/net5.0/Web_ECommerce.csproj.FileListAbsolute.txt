@@ -225,6 +225,7 @@ C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Vie
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\LogSistemas\Details.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\LogSistemas\Index.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\Produtos\Create.cshtml.g.cs
+C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\Produtos\DashboardVendas.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\Produtos\Delete.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\Produtos\Details.cshtml.g.cs
 C:\Users\Eshi\source\repos\EcommerceDDD\Web_ECommerce\obj\Debug\net5.0\Razor\Views\Produtos\Edit.cshtml.g.cs

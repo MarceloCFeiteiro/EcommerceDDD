@@ -25,8 +25,8 @@ namespace Domain.Services
             if (!string.IsNullOrWhiteSpace(userId))
             {
                 retorno.Add(new MenuSite { Controller = "Produtos", Action = "Index", Descricao = "Meus Produtos" });
-                retorno.Add(new MenuSite { Controller = "CompraUsuario", Action = "MinhasCompras", Descricao = "MinhasCompras" });
-
+                retorno.Add(new MenuSite { Controller = "CompraUsuario", Action = "MinhasCompras", Descricao = "Minhas Compras" });
+                retorno.Add(new MenuSite { Controller = "Produtos", Action = "DashboardVendas", Descricao = "Minhas Vendas" });
                 var usuario = await _usuario.ObterUsuarioPeloId(userId);
 
                 if (usuario != null && usuario.Tipo != null)
