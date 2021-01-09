@@ -46,7 +46,7 @@ namespace Domain.Services
                     }
                 }
 
-                retorno.Add(new MenuSite { Controller = "Produtos", Action = "ListarProdutosCarrinhoUsuario", Descricao = "", UrlImagem = "../Img/carrinho.png" });
+                retorno.Add(new MenuSite { Controller = "Produtos", Action = "ListarProdutosCarrinhoUsuario", Descricao = "", IdCampo = "qtdCarrinho", UrlImagem = "../Img/carrinho.png" });
             }
 
             return retorno;
